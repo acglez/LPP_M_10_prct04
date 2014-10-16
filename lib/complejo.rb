@@ -7,9 +7,14 @@ class Complejo
   end
   
   def to_s
-    "#{@real}+#{@imaginary}i"
+    if @imaginary < 0
+      "#{@real} #{@imaginary}i"
+    else
+      "#{@real} + #{@imaginary}i"
+    end
   end
-/
+
+/ Nose para que son estos métodos.
   def *(value)
     Complejo.new(@real * value, @imaginary * value)
   end
