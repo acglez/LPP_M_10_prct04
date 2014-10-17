@@ -14,5 +14,5 @@ puts "Numero uno * Numero dos = #{numberOne.product(numberTwo)}"
 puts "Numero uno / Numero dos = #{numberOne.division(numberTwo)}"
 
 puts "\nCambiando el valor de Numero tres por la suma de numero uno más numero dos."
-numberThree = numberOne.sum(numberTwo)
+numberThree = numberOne.sum(numberTwo).to_s
 puts "Numero tres = #{numberThree}" 
